@@ -1,4 +1,4 @@
-#Pygame
+#Pygame\n
 ##Instalación pygame
 ```python
 pip install pygame
