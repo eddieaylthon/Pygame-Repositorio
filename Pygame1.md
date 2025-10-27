@@ -12,16 +12,16 @@ import pygame
 ### Sacamos nuestra caja de herramientas para construir el juego
 pygame.init()
 ### Submodulos
-***screen : pantalla***
-**#el tamaño de la ventana es fijo y el usuario no puede cambiarlo**
+### screen : pantalla
+### el tamaño de la ventana es fijo y el usuario no puede cambiarlo
 ```python
 screen = pygame.display.set_mode((1280,720))    
 ```
-***clock : tiempo***
+### clock : tiempo 
 ```python
 clock = pygame.time.Clock
 ```
-Submodulos de pygame
+***Submodulos de pygame***
   pygame.display → maneja la ventana y la pantalla
   Contiene clases como:
     .set_mode((x,y)) -> maneja el ancho x y altura y de la ventana
