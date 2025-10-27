@@ -10,7 +10,9 @@ pip uninstall pygame
 ### Primero para comenzar nuestro juego llamamos a pygame
 import pygame
 ### Sacamos nuestra caja de herramientas para construir el juego
+```python
 pygame.init()
+```
 ### Submodulos
 ### screen : pantalla
 ### el tamaño de la ventana es fijo y el usuario no puede cambiarlo
