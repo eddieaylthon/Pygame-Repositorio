@@ -25,22 +25,29 @@ screen = pygame.display.set_mode((1280,720))
 ```python
 clock = pygame.time.Clock
 ```
-***Submodulos de pygame***
+### guardamos en una variable boobleana True
+### True: el juego esta en ejecucion
+### False: el juego se detiene
 ```python
-  pygame.display → maneja la ventana y la pantalla
-  Contiene clases como:
-    .set_mode((x,y)) -> maneja el ancho x y altura y de la ventana
-  pygame.image → carga imágenes
-    
-  pygame.mixer → maneja sonido
-  
-  pygame.event → maneja teclado, ratón, joystick
-
-  pygame.time → controla el tiempo y los FPS(Frames por segundo)
-  Maneja relojes, temporizadores, ticks
-  Contiene clases como:
-    .CLock()
-    .
-  
-  pygame.draw → dibuja líneas, círculos, etc.
+running = True
 ```
+
+#
+while running:
+    # poll for events
+    # pygame.QUIT event means the user clicked X to close your window
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # fill the screen with a color to wipe away anything from last frame
+    screen.fill("purple")
+
+    # RENDER YOUR GAME HERE
+
+    # flip() the display to put your work on screen
+    pygame.display.flip()
+
+    clock.tick(60)  # limits FPS to 60
+
+pygame.quit()
