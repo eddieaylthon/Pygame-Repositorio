@@ -8,7 +8,9 @@ pip install pygame
 pip uninstall pygame
 ```
 ### Primero para comenzar nuestro juego llamamos a pygame
+```python
 import pygame
+```
 ### Sacamos nuestra caja de herramientas para construir el juego
 ```python
 pygame.init()
@@ -24,6 +26,7 @@ screen = pygame.display.set_mode((1280,720))
 clock = pygame.time.Clock
 ```
 ***Submodulos de pygame***
+```python
   pygame.display → maneja la ventana y la pantalla
   Contiene clases como:
     .set_mode((x,y)) -> maneja el ancho x y altura y de la ventana
@@ -40,3 +43,4 @@ clock = pygame.time.Clock
     .
   
   pygame.draw → dibuja líneas, círculos, etc.
+```
