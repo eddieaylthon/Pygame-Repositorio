@@ -21,7 +21,7 @@ pygame.init()
 ```python
 screen = pygame.display.set_mode((1280,720))    
 ```
-### clock : tiempo 
+### Clock es clase tiempo del submodulo time
 ```python
 clock = pygame.time.Clock
 ```
@@ -31,12 +31,20 @@ clock = pygame.time.Clock
 ```python
 running = True
 ```
-
-#
-while running:
-    # poll for events
-    # pygame.QUIT event means the user clicked X to close your window
-    for event in pygame.event.get():
+### Mientras running es verdadero ejecutar este bloque
+```python
+    while running:
+```
+### event es un modulo de pygame que contiene eventos
+### como cerrrar la ventana, presionar una tecla, mover el mouse, cerra el click, etc
+```python
+        for event in pygame.event.get():
+```
+### Da la lista de todos los eventos del modulo event de pygame
+```python
+        for event in pygame.event.get():
+```
+    
         if event.type == pygame.QUIT:
             running = False
 
